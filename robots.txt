@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://am-electronicsrepair.org/sitemap.xml

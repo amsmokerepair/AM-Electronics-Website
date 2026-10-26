@@ -4,7 +4,7 @@
 (function () {
   var URL = "https://lyzbeervqnuyqlqcmpcc.supabase.co/rest/v1/rpc/submit_lead";
   var KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imx5emJlZXJ2cW51eXFscWNtcGNjIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTI4ODkzOTcsImV4cCI6MjEwODQ2NTM5N30.uKmtn4Cu2FHAFEj9MDrsYaDQssQyh4hxAX_spFTFIr4";
-  var FIELDS = ["first_name", "last_name", "name", "phone", "email", "device", "model", "issue", "message", "city", "_gotcha"];
+  var FIELDS = ["first_name", "last_name", "name", "phone", "email", "device", "model", "issue", "message", "city", "storage", "condition", "carrier", "payout", "notes", "_subject", "_gotcha"];
   function hook(form) {
     if (!form || form.dataset.bdHooked) return;
     form.dataset.bdHooked = "1";

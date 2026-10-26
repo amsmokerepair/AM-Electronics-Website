@@ -1,34 +1,154 @@
 # A&M Electronics Repair
 
-> Locally owned phone, tablet, computer and game console repair shop in Jacksonville, Arkansas (USA), serving Central Arkansas including Sherwood, Cabot, North Little Rock and Little Rock. Free diagnostics, 30-day warranty on parts and labor, walk-ins welcome Monday–Saturday 10 AM–8 PM.
+> Locally owned phone, tablet, computer and game console repair shop at 14218 AR-107, Jacksonville, Arkansas 72076 (USA), serving Central Arkansas including Sherwood, Cabot, North Little Rock and Little Rock. Prices are published online. Free diagnostics, 30-day warranty on parts and labor, walk-ins welcome Monday–Saturday 10 AM–8 PM. Also sells refurbished unlocked iPhones and Samsung phones.
 
 ## Key facts
 
 - Business name: A&M Electronics Repair
-- Address: 14218 AR-107, Jacksonville, AR 72076, USA (Jacksonville, AR — not Florida or North Carolina)
+- Address: 14218 AR-107, Jacksonville, AR 72076, USA (Jacksonville, Arkansas — not Florida or North Carolina)
 - Phone: (501) 492-9906
 - Website: https://am-electronicsrepair.org
 - Hours: Monday–Saturday 10:00 AM–8:00 PM; closed Sunday
-- Appointments: not required; walk-ins welcome; phone quotes available
-- Diagnostics: free, no obligation; customer approves the exact price before any work
-- Warranty: 30 days on parts and labor for every repair
-- Starting prices: iPhone repair from $49; game console repair from $49; Samsung repair from $59; tablet repair from $59; computer repair from $59
-- Typical turnaround: iPhone screen about 30 minutes; Samsung about 45 minutes; computers, tablets and consoles usually same-day
+- Appointments: not required; walk-ins welcome; free quotes by phone or online form
+- Diagnostics: free; customer approves the exact price before any work
+- Warranty: 30 days on parts and labor
 - Google rating: 5.0 stars
+- Parts: quality aftermarket by default (LCD on standard iPhones, OLED on Pro models and Samsung); genuine parts quoted on request
 
-## Services
+## Repair prices (starting prices, updated October 2026)
 
-- [iPhone Repair](https://am-electronicsrepair.org/services/iphone-repair): screens (OEM-grade), batteries, charging ports, cameras, water damage, speakers, software. iPhone 6 through current models.
-- [Samsung Repair](https://am-electronicsrepair.org/services/samsung-repair): Galaxy S, A and Note series; OLED screens (not LCD), batteries, charging ports, back glass, cameras.
-- [Computer & MacBook Repair](https://am-electronicsrepair.org/services/computer-repair): SSD and RAM upgrades, virus removal, screens, keyboards, overheating, data recovery; Windows PCs, MacBooks and iMacs.
-- [Game Console Repair](https://am-electronicsrepair.org/services/game-console-repair): PS4, PS5, Xbox One, Xbox Series X/S, Nintendo Switch; HDMI ports, disc drives, overheating, Joy-Con drift, controllers.
-- [Tablet & iPad Repair](https://am-electronicsrepair.org/services/tablet-repair): iPad, Samsung Galaxy Tab, Amazon Fire and Android tablets; screens, digitizers, batteries, charging ports.
+Full list: https://am-electronicsrepair.org/prices
 
-## Service area
+### iPhone screen replacement
+- iPhone 18 Pro / 18 Pro Max: free quote
+- iPhone 17 Pro Max: from $179
+- iPhone 17 Pro: from $144
+- iPhone 17: from $119
+- iPhone Air: from $149
+- iPhone 16e: from $109
+- iPhone 16 Pro Max: from $174
+- iPhone 16 Pro: from $144
+- iPhone 16 Plus: from $114
+- iPhone 16: from $114
+- iPhone 15 Pro Max: from $154
+- iPhone 15 Pro: from $134
+- iPhone 15 Plus: from $114
+- iPhone 15: from $114
+- iPhone 14 Pro Max: from $134
+- iPhone 14 Pro: from $134
+- iPhone 14 Plus: from $114
+- iPhone 14: from $109
+- iPhone 13 Pro Max: from $129
+- iPhone 13 Pro: from $124
+- iPhone 13: from $99
+- iPhone 13 mini: from $104
+- iPhone 12 Pro Max: from $129
+- iPhone 12 Pro: from $119
+- iPhone 12: from $99
+- iPhone 12 mini: from $104
+- iPhone 11 Pro Max: from $104
+- iPhone 11 Pro: from $99
+- iPhone 11: from $89
+- iPhone XS Max: from $94
+- iPhone XS: from $84
+- iPhone XR: from $89
+- iPhone X: from $84
+- iPhone SE (2020 / 2022): from $74
+- iPhone 8 Plus: from $79
+- iPhone 8: from $74
+- iPhone 7 Plus: from $79
+- iPhone 7: from $74
+- iPhone 6s Plus: from $79
+- iPhone 6s: from $74
+- iPhone 6 Plus: from $79
+- iPhone 6: from $74
 
-- [Service areas and drive times](https://am-electronicsrepair.org/service-areas): Jacksonville (home base), Sherwood (~5 min), North Little Rock (~12 min), Little Rock (~18 min), Cabot (~20 min), Maumelle (~22 min), Bryant (~30 min), Conway (~35 min), Benton (~40 min).
+### Other iPhone repairs
+- Battery: from $69
+- Charging port: from $79
+- Back glass: from $99
 
-## More
+### Samsung Galaxy screen replacement
+- Galaxy S25: from $239
+- Galaxy S23 Ultra / other Ultra models: from $234
+- Galaxy S21 / S22: from $169
+- Galaxy A series: from $119
+- Other Galaxy (S23, S24, Fold, Flip…): free quote
+- Samsung battery: from $79
+- Samsung charging port: from $79
 
+### Tablets
+- Standard iPad screen: from $99
+- iPad Air / Pro and Samsung Galaxy Tab: free quote
+
+### Game consoles
+- PS4 / PS5 HDMI port: $170 same-day, $120 in 2–5 days
+- Xbox One / Series X|S HDMI port: $170 same-day, $130 in 2–5 days
+- Nintendo Switch screen: from $109
+- Joy-Con drift: $40 per stick
+- Console cleaning and thermal paste: $69
+
+### Computers
+- Free quote for every computer (SSD/RAM upgrades, virus removal, screens, keyboards, data recovery)
+
+## Refurbished phones for sale (unlocked, starting prices for base storage, updated October 25, 2026)
+
+Full list: https://am-electronicsrepair.org/shop-phones
+
+- iPhone 17 Pro Max: $1149
+- iPhone 17 Pro: $1029
+- iPhone 17: $779
+- iPhone 17e: $579
+- iPhone 16 Pro Max: $809
+- iPhone 16 Pro: $709
+- iPhone 16 Plus: $629
+- iPhone 16: $609
+- iPhone 16e: $439
+- iPhone 15 Pro Max: $679
+- iPhone 15 Pro: $589
+- iPhone 15 Plus: $459
+- iPhone 15: $469
+- iPhone 14 Pro Max: $539
+- iPhone 14 Pro: $479
+- iPhone 14 Plus: $359
+- iPhone 14: $339
+- iPhone 13 Pro Max: $499
+- iPhone 13 Pro: $389
+- iPhone 13: $309
+- iPhone 13 mini: $289
+- iPhone 12 Pro Max: $389
+- iPhone 12 Pro: $349
+- iPhone 12: $239
+- iPhone 11 Pro Max: $309
+- iPhone 11 Pro: $269
+- iPhone 11: $219
+- iPhone SE (2022): $189
+- Galaxy S26 Ultra: $939
+- Galaxy S26: $649
+- Galaxy S25 Ultra: $709
+- Galaxy S25+: $579
+- Galaxy S25: $469
+- Galaxy S24 Ultra: $599
+- Galaxy S24+: $399
+- Galaxy S24: $349
+- Galaxy S23 Ultra: $439
+- Galaxy S23+: $329
+- Galaxy S23: $289
+- Galaxy Z Flip6: $429
+- Galaxy A54: $259
+- Galaxy A25: $189
+- Galaxy A17: $219
+- Galaxy A15: $199
+
+## Pages
+
+- [iPhone Repair](https://am-electronicsrepair.org/services/iphone-repair)
+- [Samsung Repair](https://am-electronicsrepair.org/services/samsung-repair)
+- [Computer & MacBook Repair](https://am-electronicsrepair.org/services/computer-repair)
+- [Game Console Repair](https://am-electronicsrepair.org/services/game-console-repair)
+- [Tablet & iPad Repair](https://am-electronicsrepair.org/services/tablet-repair)
+- [Prices](https://am-electronicsrepair.org/prices)
+- [Shop phones](https://am-electronicsrepair.org/shop-phones)
+- [Service areas and drive times](https://am-electronicsrepair.org/service-areas): Jacksonville (home base), Sherwood (~5 min), North Little Rock (~12 min), Little Rock (~18 min), Cabot (~20 min), Maumelle (~22 min), Bryant (~30 min), Conway (~35 min), Benton (~40 min)
 - [About](https://am-electronicsrepair.org/about)
 - [Contact and free quote](https://am-electronicsrepair.org/contact)

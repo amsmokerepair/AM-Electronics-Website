@@ -219,6 +219,28 @@ dialog .sum{background:var(--lilac);border-radius:4px;padding:10px 14px;font-siz
  .callbar{display:grid;grid-template-columns:1fr 1fr;position:fixed;left:0;right:0;bottom:0;z-index:60;background:#fff;box-shadow:0 -4px 16px rgba(24,21,31,.1);padding:10px 12px calc(10px + env(safe-area-inset-bottom));gap:10px}
  body{padding-bottom:76px}
 }
+
+nav.main{gap:20px}nav.main a{white-space:nowrap;font-size:13px}
+@media (max-width:1180px) and (min-width:761px){nav.main{gap:14px}.brand small{display:none}}
+.band .art.ph{padding:0;background:none;aspect-ratio:auto}
+.photo{display:block;width:100%;height:auto;aspect-ratio:900/640;object-fit:cover;border-radius:4px;box-shadow:0 10px 30px rgba(24,21,31,.16)}
+.svc-photo{margin-top:30px}
+/* shop phones */
+.filters{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin:6px 0 34px}
+.filters button{font:700 13px var(--head);text-transform:uppercase;letter-spacing:.04em;padding:10px 20px;border-radius:999px;border:1.5px solid var(--line);background:#fff;color:var(--ink);cursor:pointer}
+.filters button[aria-pressed="true"]{background:var(--purple);border-color:var(--purple);color:#fff}
+.phones{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+.phone{background:#fff;border-radius:8px;box-shadow:0 4px 18px rgba(24,21,31,.10);padding:22px 18px 18px;display:flex;flex-direction:column;align-items:center;text-align:center}
+.phone svg{width:92px;height:auto;margin-bottom:14px}
+.phone h3{font-size:17px;margin-bottom:4px}
+.phone .meta{font-size:13px;color:var(--muted);margin-bottom:10px}
+.phone .p{font:800 26px var(--head);color:var(--purple);margin-bottom:14px}
+.phone .p small{display:block;font:500 12px var(--body);color:var(--muted)}
+.phone .btn{width:100%;padding:11px 12px;font-size:13px;margin-top:auto}
+.phone[hidden]{display:none}
+.shop-hero{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+@media (max-width:1000px){.phones{grid-template-columns:repeat(2,1fr)}.shop-hero{grid-template-columns:1fr;gap:30px}}
+@media (max-width:420px){.phones{grid-template-columns:1fr 1fr;gap:12px}.phone{padding:16px 10px 12px}.phone .p{font-size:22px}}
 </style>
 </head>
 <body>
@@ -230,7 +252,7 @@ dialog .sum{background:var(--lilac);border-radius:4px;padding:10px 14px;font-siz
 <header class="site"><div class="wrap">
   <a class="brand" href="/"><span class="mark">A&amp;M</span><span><b>Electronics Repair</b><small>Jacksonville, Arkansas</small></span></a>
   <button class="menu-btn" aria-expanded="false" aria-controls="nav" aria-label="Menu"><span></span><span></span><span></span></button>
-  <nav class="main" id="nav"><a href="/#repairs">Repairs</a><a href="/prices">Prices</a><a href="/service-areas">Service areas</a><a href="/about" aria-current="page">About us</a><a href="/contact">Contact</a>
+  <nav class="main" id="nav"><a href="/#repairs">Repairs</a><a href="/shop-phones">Shop phones</a><a href="/prices">Prices</a><a href="/service-areas">Service areas</a><a href="/about" aria-current="page">About</a><a href="/contact">Contact</a>
     <a class="btn" href="/contact" data-open-quote>Start your repair</a></nav>
 </div></header>
 
@@ -244,7 +266,7 @@ dialog .sum{background:var(--lilac);border-radius:4px;padding:10px 14px;font-siz
 </div></section>
 <section><div class="wrap split">
   <div><h2>Real people, real repairs</h2><p class="lede">A&amp;M Electronics Repair was built on a simple idea: people shouldn't have to pay big-box prices or wait days to get their devices fixed. We serve Jacksonville, Sherwood, Cabot, Little Rock and all of Central Arkansas.</p></div>
-  <div class="facts" style="border:0"><div class="fact" style="border:0;padding:0 0 18px"><b>5.0 on Google</b><span>from local customers</span></div><div class="fact" style="border:0;padding:0 0 18px"><b>30-day warranty</b><span>on every repair</span></div><div class="fact" style="border:0;padding:0"><b>Free diagnosis</b><span>always</span></div></div>
+  <div><img class="photo" src="https://images.unsplash.com/photo-1550041473-d296a3a8a18a?auto=format&fit=crop&q=70&w=900&h=640" srcset="https://images.unsplash.com/photo-1550041473-d296a3a8a18a?auto=format&fit=crop&q=70&w=600&h=426 600w, https://images.unsplash.com/photo-1550041473-d296a3a8a18a?auto=format&fit=crop&q=70&w=900&h=639 900w, https://images.unsplash.com/photo-1550041473-d296a3a8a18a?auto=format&fit=crop&q=70&w=1300&h=924 1300w" sizes="(max-width:1000px) 100vw, 560px" width="900" height="640" alt="Technician repairing a smartphone circuit board at a repair bench" loading="lazy" decoding="async"></div><div class="facts" style="display:none"><div class="fact" style="border:0;padding:0 0 18px"><b>5.0 on Google</b><span>from local customers</span></div><div class="fact" style="border:0;padding:0 0 18px"><b>30-day warranty</b><span>on every repair</span></div><div class="fact" style="border:0;padding:0"><b>Free diagnosis</b><span>always</span></div></div>
 </div></section>
 <section class="tint"><div class="wrap"><h2>What we repair</h2><div class="links"><a class="btn ghost" href="/services/iphone-repair">iPhone Repair</a><a class="btn ghost" href="/services/samsung-repair">Samsung Repair</a><a class="btn ghost" href="/services/computer-repair">Computer &amp; MacBook Repair</a><a class="btn ghost" href="/services/game-console-repair">Game Console Repair</a><a class="btn ghost" href="/services/tablet-repair">Tablet &amp; iPad Repair</a><a class="btn" href="/prices">See our prices</a></div></div></section>
 <section class="tint" id="reviews" style="padding-top:0"><div class="wrap"><h2>What customers say</h2><div class="reviews">
@@ -260,7 +282,7 @@ dialog .sum{background:var(--lilac);border-radius:4px;padding:10px 14px;font-siz
       <p style="margin-top:12px"><a href="https://www.google.com/maps/search/?api=1&amp;query=A%26M+Electronics+Repair+14218+AR-107+Jacksonville+AR+72076" target="_blank" rel="noopener">Get directions</a></p></div>
     <div><h3>Repairs</h3><ul><li><a href="/services/iphone-repair">iPhone Repair</a></li><li><a href="/services/samsung-repair">Samsung Repair</a></li><li><a href="/services/computer-repair">Computer &amp; MacBook Repair</a></li><li><a href="/services/game-console-repair">Game Console Repair</a></li><li><a href="/services/tablet-repair">Tablet &amp; iPad Repair</a></li></ul></div>
     <div><h3>Customers from</h3><ul><li><a href='/service-areas'>Jacksonville</a></li><li><a href='/service-areas'>Sherwood</a></li><li><a href='/service-areas'>North Little Rock</a></li><li><a href='/service-areas'>Little Rock</a></li><li><a href='/service-areas'>Cabot</a></li><li><a href='/service-areas'>Maumelle</a></li><li><a href='/service-areas'>Bryant</a></li></ul></div>
-    <div><h3>Help</h3><ul><li><a href="/prices">Price list</a></li><li><a href="/contact">Free quote</a></li><li><a href="/about">About us</a></li><li><a href="/#faq">Questions</a></li><li><a href="/sitemap.xml">Sitemap</a></li></ul></div>
+    <div><h3>Help</h3><ul><li><a href="/prices">Price list</a></li><li><a href="/shop-phones">Shop phones</a></li><li><a href="/contact">Free quote</a></li><li><a href="/about">About us</a></li><li><a href="/#faq">Questions</a></li><li><a href="/sitemap.xml">Sitemap</a></li></ul></div>
   </div>
   <div class="legal"><span>© 2026 A&amp;M Electronics Repair, Jacksonville, Arkansas</span><span>Prices are starting prices and may change with part costs.</span></div>
 </div></footer>
@@ -298,7 +320,7 @@ function openQuote(pref){
   if(!dlg)return; pref=pref||{};
   var f=$('form',dlg),sum=$('.sum',dlg);
   if(pref.device){var d=$('[name=device]',f);$$('option',d).forEach(function(o){if(o.value===pref.device)d.value=o.value})}
-  $('[name=model]',f).value=pref.model||'';
+  $('[name=model]',f).value=pref.model||'';var sj=$('[name=_subject]',f);if(sj){sj.value=pref.subject||'New Repair Quote Request - A&M Electronics'}
   $('[name=issue]',f).value=pref.issue||'';
   if(pref.summary){sum.textContent=pref.summary;sum.style.display='block'}else{sum.style.display='none'}
   if(dlg.showModal)dlg.showModal();else dlg.setAttribute('open','');
@@ -308,6 +330,11 @@ window.openQuote=openQuote;
 $$('[data-open-quote]').forEach(function(b){b.addEventListener('click',function(e){e.preventDefault();openQuote({device:b.getAttribute('data-device')||''})})});
 if(dlg){$('.x',dlg).addEventListener('click',function(){dlg.close()});dlg.addEventListener('click',function(e){if(e.target===dlg)dlg.close()})}
 // ticket price checker
+$$('[data-buy]').forEach(function(b){b.addEventListener('click',function(e){e.preventDefault();var m=b.getAttribute('data-buy'),p=b.getAttribute('data-price'),br=b.getAttribute('data-brand');
+  openQuote({device:br==='Apple'?'iPhone':'Samsung Galaxy',model:m,issue:'Interested in buying: '+m+' (listed '+p+' on website). Is one in stock?',summary:m+' · '+p,subject:'Phone purchase inquiry - '+m});
+  if(window.gtag)gtag('event','phone_inquiry',{model:m});})});
+$$('.filters button').forEach(function(b){b.addEventListener('click',function(){var f=b.getAttribute('data-f');$$('.filters button').forEach(function(x){x.setAttribute('aria-pressed',x===b)});
+  $$('.phone').forEach(function(c){c.hidden=!(f==='all'||c.getAttribute('data-brand')===f)})})});
 var tk=$('#ticket');if(!tk)return;
 var selDev=$('#t-device',tk),selModel=$('#t-model',tk),selRep=$('#t-repair',tk),priceEl=$('#t-price',tk),noteEl=$('#t-note',tk),labelEl=$('#t-label',tk),book=$('#t-book',tk);
 var DEVLABEL={iphone:'iPhone',samsung:'Samsung Galaxy',tablet:'iPad / Tablet',console:'Game console',computer:'Computer',other:'Other'};

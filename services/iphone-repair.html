@@ -221,6 +221,28 @@ dialog .sum{background:var(--lilac);border-radius:4px;padding:10px 14px;font-siz
  .callbar{display:grid;grid-template-columns:1fr 1fr;position:fixed;left:0;right:0;bottom:0;z-index:60;background:#fff;box-shadow:0 -4px 16px rgba(24,21,31,.1);padding:10px 12px calc(10px + env(safe-area-inset-bottom));gap:10px}
  body{padding-bottom:76px}
 }
+
+nav.main{gap:20px}nav.main a{white-space:nowrap;font-size:13px}
+@media (max-width:1180px) and (min-width:761px){nav.main{gap:14px}.brand small{display:none}}
+.band .art.ph{padding:0;background:none;aspect-ratio:auto}
+.photo{display:block;width:100%;height:auto;aspect-ratio:900/640;object-fit:cover;border-radius:4px;box-shadow:0 10px 30px rgba(24,21,31,.16)}
+.svc-photo{margin-top:30px}
+/* shop phones */
+.filters{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin:6px 0 34px}
+.filters button{font:700 13px var(--head);text-transform:uppercase;letter-spacing:.04em;padding:10px 20px;border-radius:999px;border:1.5px solid var(--line);background:#fff;color:var(--ink);cursor:pointer}
+.filters button[aria-pressed="true"]{background:var(--purple);border-color:var(--purple);color:#fff}
+.phones{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+.phone{background:#fff;border-radius:8px;box-shadow:0 4px 18px rgba(24,21,31,.10);padding:22px 18px 18px;display:flex;flex-direction:column;align-items:center;text-align:center}
+.phone svg{width:92px;height:auto;margin-bottom:14px}
+.phone h3{font-size:17px;margin-bottom:4px}
+.phone .meta{font-size:13px;color:var(--muted);margin-bottom:10px}
+.phone .p{font:800 26px var(--head);color:var(--purple);margin-bottom:14px}
+.phone .p small{display:block;font:500 12px var(--body);color:var(--muted)}
+.phone .btn{width:100%;padding:11px 12px;font-size:13px;margin-top:auto}
+.phone[hidden]{display:none}
+.shop-hero{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+@media (max-width:1000px){.phones{grid-template-columns:repeat(2,1fr)}.shop-hero{grid-template-columns:1fr;gap:30px}}
+@media (max-width:420px){.phones{grid-template-columns:1fr 1fr;gap:12px}.phone{padding:16px 10px 12px}.phone .p{font-size:22px}}
 </style>
 </head>
 <body>
@@ -232,7 +254,7 @@ dialog .sum{background:var(--lilac);border-radius:4px;padding:10px 14px;font-siz
 <header class="site"><div class="wrap">
   <a class="brand" href="/"><span class="mark">A&amp;M</span><span><b>Electronics Repair</b><small>Jacksonville, Arkansas</small></span></a>
   <button class="menu-btn" aria-expanded="false" aria-controls="nav" aria-label="Menu"><span></span><span></span><span></span></button>
-  <nav class="main" id="nav"><a href="/#repairs">Repairs</a><a href="/prices">Prices</a><a href="/service-areas">Service areas</a><a href="/about">About us</a><a href="/contact">Contact</a>
+  <nav class="main" id="nav"><a href="/#repairs">Repairs</a><a href="/shop-phones">Shop phones</a><a href="/prices">Prices</a><a href="/service-areas">Service areas</a><a href="/about">About</a><a href="/contact">Contact</a>
     <a class="btn" href="/contact" data-open-quote>Start your repair</a></nav>
 </div></header>
 
@@ -262,7 +284,7 @@ dialog .sum{background:var(--lilac);border-radius:4px;padding:10px 14px;font-siz
   </div>
 </div>
 </div></section>
-<section><div class="wrap"><h2>What we fix</h2><ul class="chips"><li>Screen Replacement</li><li>Battery Replacement</li><li>Charging Port</li><li>Front &amp; Rear Camera</li><li>Water Damage Recovery</li><li>Speaker / Microphone</li><li>Software Issues</li><li>Home Button</li></ul></div></section>
+<section><div class="wrap band"><div class="art ph"><img class="photo" src="https://images.unsplash.com/photo-1539331586018-346b53b2aaa4?auto=format&fit=crop&q=70&w=900&h=640" srcset="https://images.unsplash.com/photo-1539331586018-346b53b2aaa4?auto=format&fit=crop&q=70&w=600&h=426 600w, https://images.unsplash.com/photo-1539331586018-346b53b2aaa4?auto=format&fit=crop&q=70&w=900&h=639 900w, https://images.unsplash.com/photo-1539331586018-346b53b2aaa4?auto=format&fit=crop&q=70&w=1300&h=924 1300w" sizes="(max-width:1000px) 100vw, 560px" width="900" height="640" alt="Technician lifting a cracked iPhone screen during a screen replacement" loading="lazy" decoding="async"></div><div><h2>What we fix</h2><ul class="chips"><li>Screen Replacement</li><li>Battery Replacement</li><li>Charging Port</li><li>Front &amp; Rear Camera</li><li>Water Damage Recovery</li><li>Speaker / Microphone</li><li>Software Issues</li><li>Home Button</li></ul></div></div></section>
 <section class="tint" id="prices"><div class="wrap"><h2>iPhone Repair prices</h2><p class="lede">Starting prices, updated October 2026. Confirmed at your free diagnosis.</p><div class="pgrid"><table class='ptable'><caption>iPhone screen replacement</caption><thead><tr><th>Model</th><th class='p'>Price</th></tr></thead><tbody><tr><td>iPhone 18 Pro / 18 Pro Max</td><td class='p'>Free quote</td></tr><tr><td>iPhone 17 Pro Max</td><td class='p'>from $179</td></tr><tr><td>iPhone 17 Pro</td><td class='p'>from $144</td></tr><tr><td>iPhone 17</td><td class='p'>from $119</td></tr><tr><td>iPhone Air</td><td class='p'>from $149</td></tr><tr><td>iPhone 16e</td><td class='p'>from $109</td></tr><tr><td>iPhone 16 Pro Max</td><td class='p'>from $174</td></tr><tr><td>iPhone 16 Pro</td><td class='p'>from $144</td></tr><tr><td>iPhone 16 Plus</td><td class='p'>from $114</td></tr><tr><td>iPhone 16</td><td class='p'>from $114</td></tr><tr><td>iPhone 15 Pro Max</td><td class='p'>from $154</td></tr><tr><td>iPhone 15 Pro</td><td class='p'>from $134</td></tr><tr><td>iPhone 15 Plus</td><td class='p'>from $114</td></tr><tr><td>iPhone 15</td><td class='p'>from $114</td></tr><tr><td>iPhone 14 Pro Max</td><td class='p'>from $134</td></tr><tr><td>iPhone 14 Pro</td><td class='p'>from $134</td></tr><tr><td>iPhone 14 Plus</td><td class='p'>from $114</td></tr><tr><td>iPhone 14</td><td class='p'>from $109</td></tr><tr><td>iPhone 13 Pro Max</td><td class='p'>from $129</td></tr><tr><td>iPhone 13 Pro</td><td class='p'>from $124</td></tr><tr><td>iPhone 13</td><td class='p'>from $99</td></tr><tr><td>iPhone 13 mini</td><td class='p'>from $104</td></tr><tr><td>iPhone 12 Pro Max</td><td class='p'>from $129</td></tr><tr><td>iPhone 12 Pro</td><td class='p'>from $119</td></tr><tr><td>iPhone 12</td><td class='p'>from $99</td></tr><tr><td>iPhone 12 mini</td><td class='p'>from $104</td></tr><tr><td>iPhone 11 Pro Max</td><td class='p'>from $104</td></tr><tr><td>iPhone 11 Pro</td><td class='p'>from $99</td></tr><tr><td>iPhone 11</td><td class='p'>from $89</td></tr><tr><td>iPhone XS Max</td><td class='p'>from $94</td></tr><tr><td>iPhone XS</td><td class='p'>from $84</td></tr><tr><td>iPhone XR</td><td class='p'>from $89</td></tr><tr><td>iPhone X</td><td class='p'>from $84</td></tr><tr><td>iPhone SE (2020 / 2022)</td><td class='p'>from $74</td></tr><tr><td>iPhone 8 Plus</td><td class='p'>from $79</td></tr><tr><td>iPhone 8</td><td class='p'>from $74</td></tr><tr><td>iPhone 7 Plus</td><td class='p'>from $79</td></tr><tr><td>iPhone 7</td><td class='p'>from $74</td></tr><tr><td>iPhone 6s Plus</td><td class='p'>from $79</td></tr><tr><td>iPhone 6s</td><td class='p'>from $74</td></tr><tr><td>iPhone 6 Plus</td><td class='p'>from $79</td></tr><tr><td>iPhone 6</td><td class='p'>from $74</td></tr></tbody></table><table class='ptable'><caption>Other iPhone repairs</caption><thead><tr><th>Repair</th><th class='p'>Price</th></tr></thead><tbody><tr><td>Battery replacement</td><td class='p'>from $69</td></tr><tr><td>Charging port</td><td class='p'>from $79</td></tr><tr><td>Back glass</td><td class='p'>from $99</td></tr></tbody></table></div></div></section>
 <section><div class="wrap"><h2>Common problems</h2>
   <table class="prob"><thead><tr><th>Problem</th><th>What we do</th></tr></thead><tbody><tr><td>Cracked, black or unresponsive screen</td><td>Screen replacement with an OEM-grade display, usually in about 30 minutes.</td></tr><tr><td>Battery drains fast or phone shuts off</td><td>Battery replacement. We test the battery first so you only pay for what&#x27;s needed.</td></tr><tr><td>Won&#x27;t charge or charges only at an angle</td><td>We check the port and battery first; a dirty or worn charging port is a common cause.</td></tr><tr><td>Dropped in water</td><td>Bring it in powered off as soon as possible for a free diagnosis and data recovery check.</td></tr><tr><td>Camera blurry, speaker or mic not working</td><td>Camera, speaker and microphone replacement for most models.</td></tr></tbody></table></div></section>
@@ -282,7 +304,7 @@ dialog .sum{background:var(--lilac);border-radius:4px;padding:10px 14px;font-siz
       <p style="margin-top:12px"><a href="https://www.google.com/maps/search/?api=1&amp;query=A%26M+Electronics+Repair+14218+AR-107+Jacksonville+AR+72076" target="_blank" rel="noopener">Get directions</a></p></div>
     <div><h3>Repairs</h3><ul><li><a href="/services/iphone-repair">iPhone Repair</a></li><li><a href="/services/samsung-repair">Samsung Repair</a></li><li><a href="/services/computer-repair">Computer &amp; MacBook Repair</a></li><li><a href="/services/game-console-repair">Game Console Repair</a></li><li><a href="/services/tablet-repair">Tablet &amp; iPad Repair</a></li></ul></div>
     <div><h3>Customers from</h3><ul><li><a href='/service-areas'>Jacksonville</a></li><li><a href='/service-areas'>Sherwood</a></li><li><a href='/service-areas'>North Little Rock</a></li><li><a href='/service-areas'>Little Rock</a></li><li><a href='/service-areas'>Cabot</a></li><li><a href='/service-areas'>Maumelle</a></li><li><a href='/service-areas'>Bryant</a></li></ul></div>
-    <div><h3>Help</h3><ul><li><a href="/prices">Price list</a></li><li><a href="/contact">Free quote</a></li><li><a href="/about">About us</a></li><li><a href="/#faq">Questions</a></li><li><a href="/sitemap.xml">Sitemap</a></li></ul></div>
+    <div><h3>Help</h3><ul><li><a href="/prices">Price list</a></li><li><a href="/shop-phones">Shop phones</a></li><li><a href="/contact">Free quote</a></li><li><a href="/about">About us</a></li><li><a href="/#faq">Questions</a></li><li><a href="/sitemap.xml">Sitemap</a></li></ul></div>
   </div>
   <div class="legal"><span>© 2026 A&amp;M Electronics Repair, Jacksonville, Arkansas</span><span>Prices are starting prices and may change with part costs.</span></div>
 </div></footer>
@@ -320,7 +342,7 @@ function openQuote(pref){
   if(!dlg)return; pref=pref||{};
   var f=$('form',dlg),sum=$('.sum',dlg);
   if(pref.device){var d=$('[name=device]',f);$$('option',d).forEach(function(o){if(o.value===pref.device)d.value=o.value})}
-  $('[name=model]',f).value=pref.model||'';
+  $('[name=model]',f).value=pref.model||'';var sj=$('[name=_subject]',f);if(sj){sj.value=pref.subject||'New Repair Quote Request - A&M Electronics'}
   $('[name=issue]',f).value=pref.issue||'';
   if(pref.summary){sum.textContent=pref.summary;sum.style.display='block'}else{sum.style.display='none'}
   if(dlg.showModal)dlg.showModal();else dlg.setAttribute('open','');
@@ -330,6 +352,11 @@ window.openQuote=openQuote;
 $$('[data-open-quote]').forEach(function(b){b.addEventListener('click',function(e){e.preventDefault();openQuote({device:b.getAttribute('data-device')||''})})});
 if(dlg){$('.x',dlg).addEventListener('click',function(){dlg.close()});dlg.addEventListener('click',function(e){if(e.target===dlg)dlg.close()})}
 // ticket price checker
+$$('[data-buy]').forEach(function(b){b.addEventListener('click',function(e){e.preventDefault();var m=b.getAttribute('data-buy'),p=b.getAttribute('data-price'),br=b.getAttribute('data-brand');
+  openQuote({device:br==='Apple'?'iPhone':'Samsung Galaxy',model:m,issue:'Interested in buying: '+m+' (listed '+p+' on website). Is one in stock?',summary:m+' · '+p,subject:'Phone purchase inquiry - '+m});
+  if(window.gtag)gtag('event','phone_inquiry',{model:m});})});
+$$('.filters button').forEach(function(b){b.addEventListener('click',function(){var f=b.getAttribute('data-f');$$('.filters button').forEach(function(x){x.setAttribute('aria-pressed',x===b)});
+  $$('.phone').forEach(function(c){c.hidden=!(f==='all'||c.getAttribute('data-brand')===f)})})});
 var tk=$('#ticket');if(!tk)return;
 var selDev=$('#t-device',tk),selModel=$('#t-model',tk),selRep=$('#t-repair',tk),priceEl=$('#t-price',tk),noteEl=$('#t-note',tk),labelEl=$('#t-label',tk),book=$('#t-book',tk);
 var DEVLABEL={iphone:'iPhone',samsung:'Samsung Galaxy',tablet:'iPad / Tablet',console:'Game console',computer:'Computer',other:'Other'};

@@ -2,6 +2,23 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KTXG2P9GSZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-KTXG2P9GSZ');
+  // Count leads: phone taps and quote-form submissions
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest && e.target.closest('a[href^="tel:"]');
+    if (a) gtag('event', 'phone_call', { link_url: a.href, page_path: location.pathname });
+  }, true);
+  document.addEventListener('submit', function (e) {
+    var f = e.target, d = f.querySelector('[name="device"]');
+    gtag('event', 'generate_lead', { lead_source: 'quote_form', device: d ? d.value : '', page_path: location.pathname });
+  }, true);
+</script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>iPhone Repair in Jacksonville, AR | A&amp;M Electronics</title>
 <meta name="description" content="iPhone Repair in Jacksonville, AR from $49. Free diagnostics, 30-day warranty, walk-ins Mon–Sat. Near Sherwood, Cabot &amp; Little Rock. (501) 492-9906">

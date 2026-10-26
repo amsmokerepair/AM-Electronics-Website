@@ -1,6 +1,6 @@
 # A&M Electronics Repair
 
-> Locally owned phone, tablet, computer and game console repair shop at 14218 AR-107, Jacksonville, Arkansas 72076 (USA), serving Central Arkansas including Sherwood, Cabot, North Little Rock and Little Rock. Prices are published online. Free diagnostics, 30-day warranty on parts and labor, walk-ins welcome Monday–Saturday 10 AM–8 PM. Also sells refurbished unlocked iPhones and Samsung phones.
+> Locally owned phone, tablet, computer and game console repair shop at 14218 AR-107, Jacksonville, Arkansas 72076 (USA), serving Central Arkansas including Sherwood, Cabot, North Little Rock and Little Rock. Prices are published online. Free diagnostics on most devices ($40 bench-time diagnostic when needed, credited to the repair), 30-day warranty on parts and labor, walk-ins welcome Monday–Saturday 10 AM–8 PM. Also sells refurbished unlocked iPhones and Samsung phones.
 
 ## Key facts
 
@@ -10,7 +10,7 @@
 - Website: https://am-electronicsrepair.org
 - Hours: Monday–Saturday 10:00 AM–8:00 PM; closed Sunday
 - Appointments: not required; walk-ins welcome; free quotes by phone or online form
-- Diagnostics: free; customer approves the exact price before any work
+- Diagnostics: free for most devices; if a device needs bench time, the diagnostic is $40 and is credited toward the repair. Customer approves the exact price before any work
 - Warranty: 30 days on parts and labor
 - Google rating: 5.0 stars
 - Parts: quality aftermarket by default (LCD on standard iPhones, OLED on Pro models and Samsung); genuine parts quoted on request

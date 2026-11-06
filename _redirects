@@ -7,3 +7,6 @@
 /services/tablet-repair-*        /services/tablet-repair        301
 /services                        /#services                     301
 /services/                       /#services                     301
+
+# Short link printed on business cards (QR code). 302 so the destination can change without reprinting.
+/review                          https://g.page/r/CfQRGoPTOuWfEAE/review 302

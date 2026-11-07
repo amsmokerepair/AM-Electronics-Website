@@ -67,6 +67,7 @@ header.site .wrap{display:flex;align-items:center;justify-content:space-between;
 .brand{display:flex;align-items:center;gap:12px;text-decoration:none}
 .brand .mark{font:800 26px var(--head);color:#fff;background:var(--purple);border-radius:12px;padding:6px 12px;transform:rotate(-4deg);box-shadow:3px 3px 0 var(--ink)}
 .brand .mark-img{width:52px;height:52px;border-radius:12px;display:block;flex:none}
+.brand .logo-full{height:62px;width:auto;display:block}
 .brand b{display:block;font:800 18px var(--head);color:var(--ink);text-transform:uppercase;line-height:1.1}
 .brand small{display:block;font:500 12px var(--body);color:var(--muted)}
 nav.main{display:flex;align-items:center;gap:26px}
@@ -220,7 +221,7 @@ dialog .sum{background:var(--lilac);border-radius:4px;padding:10px 14px;font-siz
  .tiles{grid-template-columns:repeat(2,1fr);gap:22px 16px}.tile .pic{border-radius:22px}
  .cols4{grid-template-columns:1fr}.cols4>div{border-left:0;border-top:1px solid var(--line);padding:22px 6px 0}.cols4>div:first-child{border-top:0}
  .svc-grid{grid-template-columns:1fr}.two{grid-template-columns:1fr}.glance ul{grid-template-columns:1fr}
- .brand .mark{font-size:22px}.brand .mark-img{width:44px;height:44px;border-radius:10px}.brand b{font-size:15px}
+ .brand .mark{font-size:22px}.brand .mark-img{width:44px;height:44px;border-radius:10px}.brand .logo-full{height:50px}.brand b{font-size:15px}
  .callbar{display:grid;grid-template-columns:1fr 1fr;position:fixed;left:0;right:0;bottom:0;z-index:60;background:#fff;box-shadow:0 -4px 16px rgba(24,21,31,.1);padding:10px 12px calc(10px + env(safe-area-inset-bottom));gap:10px}
  body{padding-bottom:76px}
 }
@@ -255,7 +256,7 @@ nav.main{gap:20px}nav.main a{white-space:nowrap;font-size:13px}
   <span class="r"><a href="tel:+15014929906">☎ (501) 492-9906</a><a class="addr" href="https://www.google.com/maps/search/?api=1&amp;query=A%26M+Electronics+Repair+14218+AR-107+Jacksonville+AR+72076" target="_blank" rel="noopener">⌖ Find our location</a></span>
 </div></div>
 <header class="site"><div class="wrap">
-  <a class="brand" href="/"><img class="mark-img" src="/img/logo-mark.svg" alt="" width="52" height="52"><span><b>A&amp;M Electronics Repair</b><small>Jacksonville, Arkansas</small></span></a>
+  <a class="brand" href="/" aria-label="A&amp;M Electronics Repair, home"><img class="logo-full" src="/img/logo-horizontal.svg" alt="A&amp;M Electronics Repair" width="919" height="230"></a>
   <button class="menu-btn" aria-expanded="false" aria-controls="nav" aria-label="Menu"><span></span><span></span><span></span></button>
   <nav class="main" id="nav"><a href="/#repairs">Repairs</a><a href="/shop-phones">Shop phones</a><a href="/trade-in">Trade in</a><a href="/prices">Prices</a><a href="/about">About</a><a href="/contact">Contact</a>
     <a class="btn" href="/contact" data-open-quote>Start your repair</a></nav>

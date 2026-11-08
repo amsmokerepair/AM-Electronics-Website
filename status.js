@@ -57,6 +57,12 @@
           });
           nodes.push(ul);
         }
+        if (r.note) {
+          var box = el("div", "shop-note");
+          box.appendChild(el("b", "", "Note from the shop" + (r.note_at ? " · " + day(r.note_at) : "")));
+          box.appendChild(el("div", "", String(r.note)));
+          nodes.push(box);
+        }
         nodes.push(el("p", "status-note", NOTES[status] || "Questions? Call or text us at (501) 492-9906."));
         show("ok", nodes);
       })

@@ -22,8 +22,11 @@
   var form = document.getElementById("statusForm"), out = document.getElementById("stOut"), btn = document.getElementById("stGo");
   if (!form) return;
   var num = document.getElementById("stNum"), ph = document.getElementById("stPh");
-  // a link like /status?t=1042 fills in the ticket number
-  var t = (location.search.match(/[?&]t=(\d{1,9})/) || [])[1]; if (t) { num.value = t; ph.focus(); }
+  // a link like /status?t=1042 fills in the ticket number; the QR code on the receipt also carries the
+  // ticket's private key (&k=...), which opens the status straight away with nothing to type
+  var t = (location.search.match(/[?&]t=(\d{1,9})/) || [])[1];
+  var k = (location.search.match(/[?&]k=([A-Za-z0-9]{12})(?:&|$)/) || [])[1];
+  if (t) { num.value = t; if (!k) ph.focus(); }
   [num, ph].forEach(function (el) { el.addEventListener("input", function () { el.value = el.value.replace(/\D/g, ""); }); });
   function el(tag, cls, text) { var e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; }
   function day(iso) { if (!iso) return ""; var d = new Date(iso); return d.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric", timeZone: "America/Chicago" }); }
@@ -32,13 +35,9 @@
     nodes.forEach(function (n) { out.appendChild(n); });
   }
   function fail(msg) { show("err", [el("div", "", msg)]); }
-  form.addEventListener("submit", function (ev) {
-    ev.preventDefault();
-    var n = num.value.trim(), l4 = ph.value.trim();
-    if (!/^\d{1,9}$/.test(n)) { num.focus(); return fail("Enter the ticket number from your receipt."); }
-    if (!/^\d{4}$/.test(l4)) { ph.focus(); return fail("Enter the last 4 digits of your phone number."); }
+  function lookup(n, l4, key) {
     btn.disabled = true; btn.textContent = "Checking…";
-    fetch(URL, { method: "POST", headers: { "Content-Type": "application/json", apikey: KEY, Authorization: "Bearer " + KEY }, body: JSON.stringify({ p_ticket: n, p_last4: l4 }) })
+    fetch(URL, { method: "POST", headers: { "Content-Type": "application/json", apikey: KEY, Authorization: "Bearer " + KEY }, body: JSON.stringify(key ? { p_ticket: n, p_key: key } : { p_ticket: n, p_last4: l4 }) })
       .then(function (r) { return r.json(); })
       .then(function (r) {
         if (!r || !r.ok) return fail((r && r.error) || "Something went wrong. Please call us at (501) 492-9906.");
@@ -68,5 +67,14 @@
       })
       .catch(function () { fail("We couldn't check right now. Please try again, or call (501) 492-9906."); })
       .then(function () { btn.disabled = false; btn.textContent = "Check status"; });
+  }
+  form.addEventListener("submit", function (ev) {
+    ev.preventDefault();
+    var n = num.value.trim(), l4 = ph.value.trim();
+    if (!/^\d{1,9}$/.test(n)) { num.focus(); return fail("Enter the ticket number from your receipt."); }
+    if (!/^\d{4}$/.test(l4)) { ph.focus(); return fail("Enter the last 4 digits of your phone number."); }
+    lookup(n, l4, null);
   });
+  // scanned the QR code: look it up right away
+  if (t && k) lookup(t, "", k);
 })();

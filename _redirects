@@ -10,3 +10,6 @@
 
 # Short link printed on business cards (QR code). 302 so the destination can change without reprinting.
 /review                          https://g.page/r/CfQRGoPTOuWfEAE/review 302
+
+# QR code on repair tickets: /s/<ticket>/<key> opens that repair's status directly.
+/s/:t/:k                         /status?t=:t&k=:k              302
